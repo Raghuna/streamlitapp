@@ -9,9 +9,9 @@ import re
 
 # Load the .env file and set the API key from it
 
-config = dotenv_values(".env")
-genai.configure(api_key=config.get("GOOGLE_API_KEY"))
-model = genai.GenerativeModel("gemini-2.5-flash")
+# config = dotenv_values(".env")
+# genai.configure(api_key=config.get("GOOGLE_API_KEY"))
+# model = genai.GenerativeModel("gemini-2.5-flash")
 
 # # Helper function to get dataset path
 # def get_dataset_path():
@@ -272,3 +272,4 @@ if "df" in st.session_state:
     )
 
     st.plotly_chart(fig, use_container_width=True)
+
