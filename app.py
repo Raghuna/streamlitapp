@@ -1,6 +1,6 @@
 # import packages
 import streamlit as st
-import google.generativeai as genai
+# import google.generativeai as genai
 import os
 from dotenv import dotenv_values
 import pandas as pd
@@ -270,4 +270,5 @@ if "df" in st.session_state:
         yaxis_title="Frequency",
         showlegend=False
     )
+
     st.plotly_chart(fig, use_container_width=True)
